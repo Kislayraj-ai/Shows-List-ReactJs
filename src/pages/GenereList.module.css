@@ -1,0 +1,20 @@
+.genere-section {
+  margin: 2em auto;
+  width: 90vw;
+  box-sizing: border-box;
+}
+
+.genereMovies {
+  margin: auto;
+  padding: 0.1rem 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.genereMovies img {
+  margin: auto;
+  width: 200px;
+  height: 250px;
+  border-radius: 5px;
+}

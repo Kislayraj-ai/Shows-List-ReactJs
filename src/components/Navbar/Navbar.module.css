@@ -1,0 +1,38 @@
+.navbar {
+  width: 100vw;
+  padding: 0.5rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 55px;
+  position: sticky;
+  top: 0%;
+  transition: all 0.3s linear;
+  z-index: 999;
+  margin-bottom: 4rem;
+}
+.navbar div {
+  color: #fff;
+  width: 25vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+  box-sizing: border-box;
+}
+.logo {
+  width: 130px;
+  height: 50px;
+}
+.navbar.black {
+  width: 100vw;
+  height: 65px;
+  background-color: #222;
+}
+
+.active {
+  background: #fff;
+  padding: 0.3rem 0.8rem;
+  transition: all 0.1s linear;
+  border-radius: 10px;
+}

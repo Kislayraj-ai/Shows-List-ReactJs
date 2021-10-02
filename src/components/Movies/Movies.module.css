@@ -1,0 +1,62 @@
+.movie-section,
+.movies {
+  display: flex;
+}
+
+.movie-section {
+  margin-top: 15px;
+  flex-direction: column;
+  padding: 0.2rem 0.8rem;
+}
+
+.movie-section h3 {
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 0.9rem;
+  letter-spacing: 0.2px;
+  margin-bottom: 5px;
+}
+.movies {
+  padding: 0.4rem 0.6rem;
+  gap: 10px;
+  overflow-x: scroll;
+}
+
+.movies::-webkit-scrollbar {
+  height: 0;
+  width: 0;
+}
+.movies div {
+  position: relative;
+  transition: all 0.4s ease-in;
+}
+
+.movies .images {
+  width: 120px;
+  height: 170px;
+  cursor: pointer;
+}
+
+.movies div:hover {
+  transform: scale(1.1);
+}
+
+.details {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 0px;
+  background: rgba(22, 22, 22, 0.863);
+  text-align: center;
+  visibility: hidden;
+  opacity: 0;
+  font-size: 0.8rem;
+  text-align: center;
+  transition: all 0.3s linear;
+}
+.movies div:hover .details {
+  opacity: 1;
+  visibility: visible;
+  height: 25px;
+}

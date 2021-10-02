@@ -1,0 +1,28 @@
+.genere-container {
+  width: 95vw;
+  margin: 3rem auto;
+}
+.geneerButton {
+  padding: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+.geneerButton button {
+  font-size: 0.7rem;
+  color: #fff;
+  letter-spacing: 0.1rem;
+  background-color: #36096d;
+  background-image: linear-gradient(315deg, #390c70 0%, #2cbebe 74%);
+  border-radius: 5px;
+  padding: 0.4rem 0.6rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.no-results {
+  margin-top: 3.5rem;
+  color: #fff;
+  text-align: center;
+}
