@@ -8,6 +8,7 @@ import classes from './Genere.module.css';
 const Genere = () => {
   const [genereMovie, setGenereMovie] = useState([]);
   const [allShows, setAllShows] = useState([]);
+
   const {
     request: { allmovies, tvShows, tvQuery, genreTypes },
   } = requestUrl();

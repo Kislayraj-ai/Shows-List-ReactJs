@@ -1,0 +1,15 @@
+.banner {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .banner {
+    background: #444;
+    display: block;
+    width: 100vw;
+    height: 308px;
+    margin-top: -110px;
+    position: relative;
+    box-shadow: inset 0px -10px 40px rgba(34, 34, 34, 0.8);
+  }
+}

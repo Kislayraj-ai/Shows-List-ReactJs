@@ -1,18 +1,18 @@
 import { createPortal } from 'react-dom';
 import classes from './Modal.module.css';
 
-const Modal = (props) => {
+const ModalOverlay = (props) => {
   return (
     <div className={classes.backdrop} onClick={props.onClose}>
       {props.children}
     </div>
   );
 };
-const VideoModal = (props) => {
+const Modal = (props) => {
   return createPortal(
-    <Modal onClose={props.onClose}>{props.children}</Modal>,
+    <ModalOverlay onClose={props.onClose}>{props.children}</ModalOverlay>,
     document.getElementById('backgdrop-overlay')
   );
 };
 
-export default VideoModal;
+export default Modal;

@@ -60,3 +60,15 @@
     transform: translateX(50px) scale(1);
   }
 }
+
+@media (max-width: 500px) {
+  .loader {
+    width: 200px;
+    height: 200px;
+  }
+
+  .loader .span {
+    width: 25px;
+    height: 180px;
+  }
+}

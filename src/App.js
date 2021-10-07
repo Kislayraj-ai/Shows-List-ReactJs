@@ -2,13 +2,13 @@ import React, { Suspense, lazy } from 'react';
 import { BrowserRouter, Route, Switch, Redirect } from 'react-router-dom';
 import Navbar from './components/Navbar/Navbar';
 import Loading from './components/UI/Loading';
-import './App.css';
 
 function App() {
   const MoviesPage = lazy(() => import('./pages/MoviesPage'));
   const TvPage = lazy(() => import('./pages/TvPage'));
   const Genre = lazy(() => import('./pages/Genere'));
   const Details = lazy(() => import('./pages/Details/Details'));
+  const NotFound = lazy(() => import('./pages/NotFound'));
 
   return (
     <div className="App">
@@ -36,7 +36,7 @@ function App() {
               <Genre />
             </Route>
             <Route path="*">
-              <h2>Not Found</h2>
+              <NotFound />
             </Route>
           </Switch>
         </Suspense>

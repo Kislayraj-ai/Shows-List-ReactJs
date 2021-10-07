@@ -16,8 +16,6 @@ const Movies = (props) => {
           <div key={movie.id} id={movie.id}>
             <img
               className={classes.images}
-              width={props.width}
-              height={props.height}
               src={`${imageUrl}${movie.poster_path}`}
               alt="movies"
             />

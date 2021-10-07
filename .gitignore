@@ -1,2 +1,5 @@
+.netlify/
 src/API_KEY.js
 node_modules/
+build/
+public/_redirects

@@ -6,7 +6,6 @@ import YouTube from 'react-youtube';
 import starImage from '../../Images/star.png';
 import { FaPlay } from 'react-icons/fa';
 import classes from './Details.module.css';
-import Loading from '../../components/UI/Loading';
 
 const DetailList = (props) => {
   const [genre, setGenre] = useState([]);
@@ -69,7 +68,12 @@ const DetailList = (props) => {
     <>
       {close && (
         <VideoModal onClose={closeHandler}>
-          <YouTube videoId={`${trailorKeyId}`} opts={opts} onReady={onReady} />
+          <YouTube
+            className={classes.youtube}
+            videoId={`${trailorKeyId}`}
+            opts={opts}
+            onReady={onReady}
+          />
         </VideoModal>
       )}
 
@@ -85,26 +89,26 @@ const DetailList = (props) => {
           <p>title </p> {detail.title || detail.original_name}
         </span>
         <span>
-          <p>genere : </p>
+          <p>genere </p>
 
           {genre.map((item) => item).join('_')}
         </span>
 
         <span>
-          <p>languages : </p>
+          <p>languages </p>
           {language.map((item) => item).join('_') || 'No Info'}
         </span>
         <span>
-          <p>budget : </p>
+          <p>budget </p>
           {detail.budget ? `$${detail.budget}` : 'No Info'}
         </span>
 
         <span>
-          <p>tagline : </p>
+          <p>tagline </p>
           {detail.tagline || detail.title || detail.original_name}
         </span>
         <span>
-          <p>runtime: </p>
+          <p>runtime </p>
           {detail.runtime || 'No Info'}
         </span>
         <span>
@@ -112,7 +116,7 @@ const DetailList = (props) => {
           {detail.release_date || 'No Info '}
         </span>
         <span>
-          <p>status:</p> {detail.status || 'No Info'}
+          <p>status </p> {detail.status || 'No Info'}
         </span>
 
         <div className={classes.overView}>

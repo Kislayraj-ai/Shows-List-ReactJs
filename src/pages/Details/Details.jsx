@@ -1,7 +1,7 @@
 import React from 'react';
 import { useParams } from 'react-router';
 import { requestUrl } from '../../apis';
-import { useDeatils, useShows } from '../../hooks/use-moviesData';
+import { useDeatils } from '../../hooks/use-moviesData';
 import DetailList from './DetailList';
 import classes from './Details.module.css';
 

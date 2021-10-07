@@ -18,3 +18,18 @@
   height: 250px;
   border-radius: 5px;
 }
+
+@media (max-width: 500px) {
+  .genere-section {
+    width: 100vw;
+  }
+  .genereMovies {
+    gap: 15px;
+  }
+  .genereMovies img {
+    margin: auto;
+    width: 100px;
+    height: 150px;
+    border-radius: 5px;
+  }
+}
